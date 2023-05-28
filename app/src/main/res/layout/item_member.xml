@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="16dp"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/ivPerson"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="16dp"
+            android:elevation="16dp"
+            android:src="@drawable/woman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:elevation="16dp"
+            android:text="Tina Mehta"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tvTime"
+            app:layout_constraintStart_toEndOf="@id/ivPerson"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:elevation="16dp"
+            android:text="16:40"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLocation"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:elevation="16dp"
+            android:src="@drawable/ic_location"
+            app:tint="@color/light_green"
+            app:layout_constraintStart_toEndOf="@id/ivPerson"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:elevation="16dp"
+            android:text="9th building, 2nd Floor,maldev road, manali 9th building,2nd Floor,maldev road ,  manali 9th building,2nd ,  manali 9th building,2nd Floor,maldev road,nd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev roadnd Floor,maldev road "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivLocation"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <ImageView
+            android:id="@+id/ivBattery"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:elevation="16dp"
+            android:src="@drawable/battery"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson"
+            app:tint="@color/light_green" />
+
+        <TextView
+            android:id="@+id/tvBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:color="@color/light_green"
+            android:elevation="16dp"
+            android:text="90%"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivBattery"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson" />
+
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:elevation="16dp"
+            android:src="@drawable/send"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvBattery"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson"
+            app:tint="@color/light_green" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:color="@color/light_green"
+            android:elevation="16dp"
+            android:text="223M"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivSend"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson" />
+
+        <ImageView
+            android:id="@+id/ivWifi"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="4dp"
+            android:elevation="16dp"
+            android:src="@drawable/ic_wifi"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDistance"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson"
+            app:tint="@color/light_green" />
+
+        <TextView
+            android:id="@+id/tvWifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:color="@color/light_green"
+            android:elevation="16dp"
+            android:text="WIFI"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivWifi"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson" />
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="4dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_call"
+            android:background="@drawable/shape_circle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ivPerson"
+            app:tint="#ffffff"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
